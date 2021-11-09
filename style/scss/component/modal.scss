@@ -1,0 +1,38 @@
+.modal {
+  position: fixed;
+  z-index: $z-index_overlay;
+  flex-direction: column;
+  border: hsla(180, 100%, 65%, 0.1) solid 1px;
+  border: 0.5rem solid $color-line;
+  background-image: linear-gradient(to right bottom, $gradient-linear_navbar-block);
+  opacity: 0;
+  cursor: pointer;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  transform: scale(0);
+
+  @extend %full-layout;
+  @extend %flex-center;
+
+  &.active {
+    display: flex;
+    opacity: 0.9;
+    transform: scale(1);
+  }
+
+  &__overlay-title {
+    position: relative;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+.modal-trigger {
+  cursor: pointer;
+  transition: transform 300ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

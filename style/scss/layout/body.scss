@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+
+body {
+  position: relative;
+  background-color: $color_primary;
+  color: $color_text-color;
+  letter-spacing: 4px;
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+}
+
+.text {
+  &--big {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: $layout-size_base !important;
+}

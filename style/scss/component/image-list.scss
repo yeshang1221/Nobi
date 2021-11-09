@@ -1,0 +1,7 @@
+.image-list {
+  @extend %layout_list;
+
+  img {
+    width: 100%;
+  }
+}

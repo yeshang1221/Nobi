@@ -1,0 +1,32 @@
+.list {
+  li {
+    display: flex;
+    padding: $row-size_col-margin-big 0;
+    border-bottom: 1px solid $color_line-dark;
+
+    @include phone-width() {
+      flex-direction: column;
+    }
+
+    &:nth-last-child(1) {
+      border-bottom: none;
+    }
+
+    a {
+      color: $color_white;
+    }
+
+    span {
+      display: inline-flex;
+      margin-right: $row-size_col-margin-big;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+
+        @include phone-width() {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.footer {
+  margin-top: $layout-size_big;
+
+  &__container {
+    position: relative;
+    padding: $layout-size_big 0;
+    text-align: center;
+
+    @extend %board-top;
+    @extend %layout_container;
+  }
+
+  &__logo {
+    margin-bottom: $layout-size_base;
+
+    img {
+      margin: 0 $layout-size_base/2;
+
+      @include phone-width() {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  &__information {
+    font-size: 0.9rem;
+    line-height: 2;
+  }
+}

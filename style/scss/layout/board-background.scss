@@ -1,0 +1,129 @@
+.board-background {
+  z-index: $z-index_background;
+
+  @extend %pseudo-element--full;
+
+  &__top,
+  &__bottom,
+  &__left,
+  &__right {
+    position: absolute;
+    display: block;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: -$border-size_board;
+    left: $layout-size_base;
+    z-index: $z-index_basic;
+    display: inline-block;
+    width: 420px;
+    height: 26px;
+    background-image: url(../../../public/images/mask-top.svg);
+    background-repeat: no-repeat;
+
+    @include phone-width() {
+      left: $layout-size_base/2;
+      width: 300px;
+      background-position: right;
+    }
+
+    @include s-phone-width() {
+      width: 280px;
+    }
+
+    &--title {
+      padding-left: 80px;
+    }
+  }
+
+  &__top {
+    top: -$border-size_board;
+    width: 100%;
+    height: $border-size_board;
+
+    &::before {
+      top: 12px;
+      left: 0;
+      display: inline-block;
+      width: calc(100% - 310px);
+      height: 2px;
+      background-color: $color-line;
+    }
+
+
+    &::after {
+      right: 0;
+      width: 310px;
+      height: $border-size_board;
+      background-image: url(../../../public/images/board_top-shape.svg);
+      content: '';
+    }
+  }
+
+  &__bottom {
+    bottom: -$border-size_board;
+    width: 100%;
+    height: $border-size_board;
+
+    &::before {
+      left: 0;
+      width: 160px;
+      height: $border-size_board;
+      background-image: url(../../../public/images/board_bottom-shape.svg);
+      content: '';
+    }
+
+    &::after {
+      top: 15px;
+      right: 0;
+      display: inline-block;
+      width: calc(100% - 160px);
+      height: 2px;
+      background-color: $color-line;
+    }
+  }
+
+  &__left {
+    top: -22px;
+    width: 2px;
+    height: calc(100% + 22px);
+    background-color: $color-line;
+
+    &::before {
+      top: $layout-size_base;
+      left: -7px;
+      content: url('../../../public/images/board_left-shape.svg');
+    }
+
+    &::after {
+      bottom: -5px;
+      left: 200px;
+      content: url('../../../public/images/board_bottom-mask.svg');
+
+      @include s-phone-width() {
+        display: none;
+      }
+    }
+  }
+
+  &__right {
+    right: 0;
+    bottom: -17px;
+    width: 2px;
+    height: calc(100% + 17px);
+    background-color: $color-line;
+
+    &::before {
+      top: $layout-size_base;
+      left: 7px;
+      content: url('../../../public/images/board_right-shape.svg');
+    }
+  }
+}

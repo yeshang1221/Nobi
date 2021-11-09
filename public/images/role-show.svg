@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="767.157" height="202.657" viewBox="0 0 767.157 202.657">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#005693"/>
+      <stop offset="1" stop-color="#00a2c1"/>
+    </linearGradient>
+    <filter id="英雄即將登場" x="76.579" y="33" width="614" height="137" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#beffff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3469" data-name="Group 3469" transform="translate(-118.906 -33.387)">
+    <g id="Group_2875" data-name="Group 2875">
+      <path id="Path_8169" data-name="Path 8169" d="M580.038,130.716H556.649l-24.826-43a4,4,0,0,0-3.464-2h-21.98v-21.7a4,4,0,0,0-8,0v21.7H476.4a4,4,0,0,0-3.464,2l-24.827,43H424.931a4,4,0,0,0,0,8h23.176l24.827,43a4,4,0,0,0,3.464,2h21.981v21.7a4,4,0,0,0,8,0v-21.7h21.98a4,4,0,0,0,3.464-2l24.826-43h23.389a4,4,0,0,0,0-8Zm-53.988,45H478.708l-23.672-41,23.672-41H526.05l23.672,41Z" opacity="0.5" fill="url(#linear-gradient)"/>
+      <path id="Path_8170" data-name="Path 8170" d="M502.484,155.841a21.125,21.125,0,1,1,21.125-21.125A21.149,21.149,0,0,1,502.484,155.841Zm0-34.25a13.125,13.125,0,1,0,13.125,13.125A13.139,13.139,0,0,0,502.484,121.591Z" fill="#00a8c1" opacity="0.5"/>
+      <path id="Path_8171" data-name="Path 8171" d="M884.97,130.9l-18.241-29.98a7.5,7.5,0,0,0-6.405-3.6H848.81L813.051,35.387a4,4,0,0,0-3.464-2H195.917a4,4,0,0,0-3.464,2L156.694,97.323H144.646a7.5,7.5,0,0,0-6.407,3.6L120,130.9a7.5,7.5,0,0,0-.076,7.668l17.137,29.467a7.5,7.5,0,0,0,6.482,3.729H156.5l35.955,62.276a4,4,0,0,0,3.464,2h613.67a4,4,0,0,0,3.464-2l35.955-62.276h12.421a7.5,7.5,0,0,0,6.482-3.729l17.136-29.467A7.5,7.5,0,0,0,884.97,130.9Zm-77.692,97.14H198.227l-53.883-93.328,53.883-93.329H807.278l53.883,93.329Z" fill="#00a8c1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 118.91, 33.39)" filter="url(#英雄即將登場)">
+      <text id="英雄即將登場-2" data-name="英雄即將登場" transform="translate(383.58 132)" fill="#beffff" font-size="85" font-family="PingFangTC-Medium, PingFang TC" font-weight="500" letter-spacing="0.2em"><tspan x="-297.5" y="0">英雄即將登場</tspan></text>
+    </g>
+  </g>
+</svg>

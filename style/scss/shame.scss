@@ -1,0 +1,10 @@
+.fb-page {
+  flex-basis: 260px;
+  margin-left: 40px;
+
+  @include pad-under-width() {
+    margin: auto;
+    margin-top: 40px;
+    width: 100%;
+  }
+}

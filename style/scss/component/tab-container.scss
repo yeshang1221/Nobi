@@ -1,0 +1,59 @@
+.tab-container {
+  position: relative;
+
+  &__tabs {
+    position: absolute;
+    top: -80px;
+    display: inline-flex;
+    font-size: 1.1rem;
+
+    @include pad-under-width() {
+      position: relative;
+      top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: $layout-size_small;
+    }
+
+    li {
+      position: relative;
+      margin-right: $row-size_col-margin;
+      padding: $row-size_col-margin-big $layout-size_small;
+      opacity: 0.7;
+      cursor: pointer;
+      transition: opacity 300ms ease-in-out;
+
+      @include pad-under-width() {
+        margin-bottom: $row-size_col-margin-big;
+      }
+
+      @include phone-width() {
+        flex: 1;
+        text-align: center;
+        word-break: keep-all;
+      }
+
+      &::before {
+        border: 1px solid $color_text-color--accent;
+        background-color: hsla(213, 100%, 45%, 0.20);
+        transform: skewX(15deg);
+
+        @extend %pseudo-element--full;
+      }
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__pages {
+    section {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
